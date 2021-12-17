@@ -1,0 +1,12 @@
+{
+    "name": "yuxiaobo/rabbit-mq-test",
+    "authors": [
+        {
+            "name": "余小波",
+            "email": "yuxiaobo64@gmail.com"
+        }
+    ],
+    "require": {
+        "php-amqplib/php-amqplib": "^3.1"
+    }
+}
