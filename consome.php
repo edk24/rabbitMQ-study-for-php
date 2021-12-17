@@ -32,7 +32,7 @@ $callback = function (\PhpAmqpLib\Message\AMQPMessage $msg) {
 };
 
 $channel->basic_consume('test', '', false, false, false, false, $callback);
-
+$channel->wait_for_pending_acks_returns(0.1);
 while (count($channel->callbacks)) {
     $channel->wait();
 }
