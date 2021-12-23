@@ -37,6 +37,15 @@ $ php publisher.php
 $ php consome.php
 ```
 
+**一些问题**
+
+`rabbitmq` 有防止消费者阻塞卡死的设计，一段时间 `消费者` 没有消息就会被踢掉，所以需要 `保持链接` 或者使用 `心跳`
+
+- `保持链接` 把 `keepalive` 参数设置为 `true`
+  ```
+  $connection = new AMQPStreamConnection('localhost', 5672, 'guest', 'guest', '/', false, 'AMQPLAIN', null, 'en_US', 3.0, 3.0, null, true);
+  ```
+
 ## End
 
 参考文章
