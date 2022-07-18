@@ -52,3 +52,4 @@ $ php consome.php
 
 - https://blog.csdn.net/u014290054/article/details/78923894
 - [PHP实战RabbitMQ之延时队列篇](https://segmentfault.com/a/1190000022774099)
+- [rabbitmq官方文档翻译版](https://rabbitmq.shujuwajue.com/)
